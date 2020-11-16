@@ -1,25 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     
+     <>
+      <div className="Character">
+        <img className="Character_shadow pixcelart" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/21542/DemoRpgCharacterShadow.png" alt="Shadow" />
+        <img className="Character_spritesheet pixcelart face-right" src={'/images/m2.png'} alt="Character" />  
+      </div>
+      <div className="Character">
+        <img className="Character_shadow pixcelart" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/21542/DemoRpgCharacterShadow.png" alt="Shadow" />
+        <img className="Character_spritesheet pixcelart face-left" src={'/images/m1.png'} alt="Character" />  
+      </div>
+      <div className="Character">
+        <img className="Character_shadow pixcelart" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/21542/DemoRpgCharacterShadow.png" alt="Shadow" />
+        <img className="Character_spritesheet pixcelart" src={'/images/f1.png'} alt="Character" />  
+      </div>
+      <div className="Character">
+        <img className="Character_shadow pixcelart" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/21542/DemoRpgCharacterShadow.png" alt="Shadow" />
+        <img className="Character_spritesheet pixcelart face-up" src={'/images/f2.png'} alt="Character" />  
+      </div>
+     </>
+      
   );
 }
 
 export default App;
+
